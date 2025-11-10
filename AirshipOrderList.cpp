@@ -73,3 +73,15 @@ bool AirshipOrderList::removeDelivery(string szCust, string szItm)
     };
     return false;
 };
+
+bool AirshipOrderList::modifyDelivery(string szCust, string szItm, int iNewQty, double dNewCst)
+{
+    Delivery* delivery = findDelivery(szCust, szItm);
+    if(delivery == nullptr) return false;
+
+    delivery->iQuantity = iNewQty;
+    delivery->dCost = dNewCst;
+
+    return true;
+};
+
