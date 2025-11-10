@@ -85,3 +85,22 @@ bool AirshipOrderList::modifyDelivery(string szCust, string szItm, int iNewQty, 
     return true;
 };
 
+void AirshipOrderList::displayDeliveries() const
+{
+    Delivery* current = pHead;
+
+    if(current == nullptr)
+    {
+        std::cout << "No deliveries to display\n";
+    };
+
+    while(current != nullptr)
+    {
+        std::cout << "Name: " << current->szName << "\n";
+        std::cout << "Item: " << current->szItem << "\n";
+        std::cout << "Quantity: " << current->iQuantity << "\n";
+        std::cout << "Cost: " << current->dCost << "\n";
+
+        current = current->pNext;
+    };
+};
