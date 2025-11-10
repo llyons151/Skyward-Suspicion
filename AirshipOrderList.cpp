@@ -38,3 +38,15 @@ void AirshipOrderList::addDelivery(std::string szCust, std::string szItm, int iQ
         }
     };
 };
+
+Delivery* AirshipOrderList::findDelivery(std::string szCust, std::string szItm) const
+{
+    Delivery* current = pHead;
+
+    while(current != nullptr)
+    {
+        if(current->szName == szCust && current->szItem == szItm) return current;
+        current = current->pNext;
+    };
+    return nullptr;
+};
