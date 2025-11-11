@@ -1,12 +1,19 @@
 # Link the object file into an executable called program5.out
-program5.out: program5_driver.o AirshipOrderList.o
-	g++ -g -std=c++17 program5_driver.o AirshipOrderList.o -o program5.out
+program5.out: program5_driver.o AirshipOrderList.o DisplayManager.o GameManager.o
+	g++ -g -std=c++17 program5_driver.o AirshipOrderList.o DisplayManager.o GameManager.o -o program5.out
 
 AirshipOrderList.o: AirshipOrderList.cpp AirshipOrderList.hpp
 	g++ -g -std=c++17 -c AirshipOrderList.cpp
 
+DisplayManager.o: DisplayManager.cpp DisplayManager.hpp
+	g++ -g -std=c++17 -c DisplayManager.cpp
+
+GameManager.o: GameManager.cpp GameManager.hpp
+	g++ -g -std=c++17 -c GameManager.cpp
+
 program5_driver.o: program5_driver.cpp AirshipOrderList.hpp
 	g++ -g -std=c++17 -c program5_driver.cpp
+
 
 # Run the compiled program5.out executable
 run:
