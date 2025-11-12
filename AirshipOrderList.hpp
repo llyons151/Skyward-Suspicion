@@ -36,4 +36,5 @@ class AirshipOrderList
         Delivery* findDelivery(string szCust, string szItm) const;
         bool modifyDelivery(string szCust, string szItm, int iNewQty, double dNewCst);
         void displayDeliveries() const;
+        void displayDelivery(const Delivery* delivery);
 };

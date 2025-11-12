@@ -92,6 +92,7 @@ void AirshipOrderList::displayDeliveries() const
     if(current == nullptr)
     {
         std::cout << "No deliveries to display\n";
+        return;
     };
 
     while(current != nullptr)
@@ -100,6 +101,31 @@ void AirshipOrderList::displayDeliveries() const
         std::cout << "Item: " << current->szItem << "\n";
         std::cout << "Quantity: " << current->iQuantity << "\n";
         std::cout << "Cost: " << current->dCost << "\n";
+
+        current = current->pNext;
+    };
+};
+
+void AirshipOrderList::displayDelivery(const Delivery* delivery)
+{
+    Delivery* current = pHead;
+
+    if(current == nullptr)
+    {
+        std::cout << "No deliveries to display\n";
+        return;
+    };
+
+    while(current != nullptr)
+    {
+        if(current->szName == delivery->szName && current->szItem == delivery->szItem)
+        {
+            std::cout << "Name: " << current->szName << "\n";
+            std::cout << "Item: " << current->szItem << "\n";
+            std::cout << "Quantity: " << current->iQuantity << "\n";
+            std::cout << "Cost: " << current->dCost << "\n";
+            return;
+        };
 
         current = current->pNext;
     };

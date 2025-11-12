@@ -18,6 +18,8 @@ int main()
     gameManager.runCustomerScene(displayManager.getCustomerFour());
     gameManager.runCustomerScene(displayManager.getCustomerFive());
     gameManager.runCustomerScene(displayManager.getCustomerSix());
+    gameManager.runGuessingScene(displayManager.getGuessingScene());
+
 
     return 0;
 }

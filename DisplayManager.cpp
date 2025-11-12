@@ -9,6 +9,7 @@ DisplayManager::DisplayManager() {
     setCustomerFour();
     setCustomerFive();
     setCustomerSix();
+    setGuessingScene();
 }
 
 void DisplayManager::setStartingScene() {
@@ -297,5 +298,39 @@ R"(
         Item: Cleaning Solvent | 
         Qty: 2 | 
         Cost: 600 |
+)";
+}
+
+void DisplayManager::setGuessingScene()
+{
+    m_szGuessingScene = R"(                 
+                 .                             .
+                //                             \\
+               //                               \\
+              //                                 \\
+             //                _._                \\
+          .---.              .//|\\.              .---.
+________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
+         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /    
+           ~~~    / H          [H]          H \    ~~~      0
+                 / _H_         _H_         _H_ \           /\#
+                   UUU         UUU         UUU             /\
+
+)"
+R"(
+        ──────────────────────────────────────────────
+            [January 17 – 01:52, The Manifest Test]
+        ──────────────────────────────────────────────
+
+        The rain slackens. The hangar lights buzz. 
+        You plant the six slips on the crate and listen.
+
+        The mail pouch at your hip thrums—soft, then sharp—
+        like a tuning fork near a lie.
+
+        One shipment’s description isn’t honest.
+
+        Review the entries and choose the suspect:
+
 )";
 }

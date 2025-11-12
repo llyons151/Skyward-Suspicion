@@ -10,6 +10,8 @@ private:
     std::string m_szCustomerFour;
     std::string m_szCustomerFive;
     std::string m_szCustomerSix;
+    std::string m_szGuessingScene;
+    std::string m_szEndingScene;
 
     void setStartingScene();
     void setCustomerOne();
@@ -18,6 +20,8 @@ private:
     void setCustomerFour();
     void setCustomerFive();
     void setCustomerSix();
+    void setGuessingScene();
+    void setEndingScene();
 
 public:
     DisplayManager();
@@ -28,4 +32,6 @@ public:
     const std::string& getCustomerFour()   const { return m_szCustomerFour; }
     const std::string& getCustomerFive()   const { return m_szCustomerFive; }
     const std::string& getCustomerSix()    const { return m_szCustomerSix; }
+    const std::string& getGuessingScene()  const { return m_szGuessingScene; }
+    const std::string& getEndingScene()    const { return m_szEndingScene; }
 };
