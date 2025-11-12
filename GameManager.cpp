@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <string>
 #include <iostream>
+#include <limits>
+#include <iomanip>
 
 GameManager::GameManager(AirshipOrderList& airshipOrderList) : m_airshipOrderList(airshipOrderList){};
 
@@ -28,48 +30,48 @@ void GameManager::promptCargoInput()
     int iQuantity = 0;
     double dCost = 0.0;
 
-    std::cout << "      ──────────────────────────────────────────────\n";
-    std::cout << "                CARGO MANIFEST ENTRY TERMINAL\n";
-    std::cout << "      ──────────────────────────────────────────────\n\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "         CARGO MANIFEST ENTRY TERMINAL\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n\n";
 
-    std::cout << "  Captain, input the following details carefully.\n";
-    std::cout << "  One wrong digit and insurance will have your head.\n\n";
+    std::cout << szLineSpacing << "Captain, input the following details carefully.\n";
+    std::cout << szLineSpacing << "One wrong digit and insurance will have your head.\n\n";
 
-    std::cout << "  Customer / Sender Name: ";
+    std::cout << szLineSpacing << "Customer / Sender Name: ";
     std::getline(std::cin >> std::ws, szCustomer);
 
-    std::cout << "  Item Description: ";
+    std::cout << szLineSpacing << "Item Description: ";
     std::getline(std::cin >> std::ws, szItem);
 
-    std::cout << "  Quantity (units): ";
+    std::cout << szLineSpacing << "Quantity (units): ";
     while (!(std::cin >> iQuantity) || iQuantity <= 0) {
         std::cin.clear();
-        std::cout << "  Invalid number. Enter a positive integer: ";
+        std::cout << szLineSpacing << "Invalid number. Enter a positive integer: ";
     }
 
-    std::cout << "  Declared Value (credits): ";
+    std::cout << szLineSpacing << "Declared Value (credits): ";
     while (!(std::cin >> dCost) || dCost < 0.0) {
         std::cin.clear();
-        std::cout << "  Invalid amount. Enter a valid cost: ";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << szLineSpacing << "Invalid amount. Enter a valid cost: ";
     }
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-    std::cout << "\n      ──────────────────────────────────────────────\n";
-    std::cout << "  Recording shipment...\n";
-    std::cout << "      Sender:  " << szCustomer << "\n";
-    std::cout << "      Cargo:   " << szItem << "\n";
-    std::cout << "      Units:   " << iQuantity << "\n";
-    std::cout << "      Value:   " << std::fixed << std::setprecision(2)
-              << dCost << " credits\n";
-    std::cout << "      ──────────────────────────────────────────────\n\n";
-
+    std::cout << "\n" << szLineSpacing << "──────────────────────────────────────────────\n\n";
+    std::cout << szLineSpacing << "Recording shipment...\n";
+    std::cout << szLineSpacing << "Sender:  " << szCustomer << "\n";
+    std::cout << szLineSpacing << "Cargo:   " << szItem << "\n";
+    std::cout << szLineSpacing << "Units:   " << iQuantity << "\n";
+    std::cout << szLineSpacing << "Value:   " << std::fixed << std::setprecision(2)
+              << dCost << " credits\n\n";
     m_airshipOrderList.addDelivery(szCustomer, szItem, iQuantity, dCost);
 };
 
 void GameManager::promptNextCustomerScene()
 {
-    std::cout << "        ──────────────────────────────────────────────\n";
-    std::cout << "                    PRESS ENTER TO CONINTUE\n";
-    std::cout << "        ──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "             PRESS ENTER TO CONINTUE\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
 
     std::string iUserInput;
     std::getline(std::cin, iUserInput);

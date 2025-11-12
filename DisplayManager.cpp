@@ -31,17 +31,19 @@ R"(
            SKYBORNE EXPRESS – DOCK 7, MIDNIGHT SHIFT
         ──────────────────────────────────────────────
 
-      Engines purr in the dark. Rain taps Morse on the hull.
-  Six bookings tonight. All flagged "priority." None look honest.
+        Engines purr in the dark. Rain taps Morse on 
+        the hull. Six bookings tonight. All flagged 
+        "priority." None look honest.
 
-                        [Radio crackle]
+        [Radio crackle]
 
-  DISPATCH: "Captain, wrap by 0100. Double-check every manifest.
-                         HQ's twitchy."
+        DISPATCH: "Captain, wrap by 0100. Double-check 
+        every manifest. HQ's twitchy."
 
-                 You flip your clipboard open.
+        You flip your clipboard open.
 
-    If something goes wrong tonight, your signature’s on it.
+        If something goes wrong tonight, 
+        your signature’s on it.
 )";
 }
 
@@ -60,23 +62,28 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                    UUU         UUU         UUU             /\   /\ /\   /\*
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 00:12, The Lord Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+            [January 17 – 00:12, The Lord Arrives]
+        ──────────────────────────────────────────────
 
-Perfume hits before the echo of his boots.
+        Perfume hits before the echo of his boots.
 
-Lord Varric, velvet and gold, gestures lazily to a crate:
-"Clockwork Champagne. Heirloom. Handle it like gossip: gently."
+        Lord Varric, velvet and gold, gestures lazily 
+        to a crate: "Clockwork Champagne. Heirloom. 
+        Handle it like gossip: gently."
 
-He leans in, smile too polished.
+        He leans in, smile too polished.
 
-Lord Varric: "Between glass and trust, Captain, one always breaks.
-Guess which I insure."
+        Lord Varric: "Between glass and trust, Captain, 
+        one always breaks. Guess which I insure."
 
-The crate ticks. Subtle. Wrong.
+        The crate ticks. Subtle. Wrong.
 
-[You log: House Altura | Item: Clockwork Champagne | Qty: 1 | Cost: 300]
+        You log: 
+        Name: House Altura |
+        Item: Clockwork Champagne | 
+        Qty: 1 | 
+        Cost: 300 |
 )";
 }
 
@@ -95,24 +102,31 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                    UUU         UUU         UUU    #        /\   _ _ /\  #
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 00:47, The Professor Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+         [January 17 – 00:47, The Professor Arrives]
+        ──────────────────────────────────────────────
 
-A storm in a lab coat skids inside, trailing papers.
+        A storm in a lab coat skids inside, 
+        trailing papers.
 
-Professor Elmwick: "Good vessel. Questionable humidity. Anyway—"
-He slaps a hand on a glass cylinder of swirling blue light.
-"Do not drop it. Do not insult it. Do not *concentrate* on it."
+        Professor Elmwick: "Good vessel. Questionable 
+        humidity. Anyway—" He slaps a hand on a glass 
+        cylinder of swirling blue light. "Do not drop 
+        it. Do not insult it. Do not *concentrate* on 
+        it."
 
-The vapor pulses when he says "concentrate."
+        The vapor pulses when he says "concentrate."
 
-Professor Elmwick: "If it phases through anything important,
-log it as peer review."
+        Professor Elmwick: "If it phases through 
+        anything important, log it as peer review."
 
-He chases a formula sheet back into the rain.
+        He chases a formula sheet back into the rain.
 
-[You log: Professor Elmwick | Item: Cognitive Phase Cylinder | Qty: 1 | Cost: 450]
+        You log: 
+        Name: Professor Elmwick | 
+        Item: Cognitive Phase Cylinder | 
+        Qty: 1 | 
+        Cost: 450 |
 )";
 }
 
@@ -131,22 +145,27 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                    UUU         UUU         UUU    ##     / \
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 01:03, The Mechanic Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+         [January 17 – 01:03, The Mechanic Arrives]
+        ──────────────────────────────────────────────
 
-Mira Dross walks like she owns gravity.
+        Mira Dross walks like she owns gravity.
 
-Mira: "Engine valves. Eight units. Fifty each. They'll outlive you."
+        Mira: "Engine valves. Eight units. Fifty each. 
+        They'll outlive you."
 
-The crate’s heavy, clean, correctly stenciled.
+        The crate’s heavy, clean, correctly stenciled.
 
-Mira: "Saboteurs love tidy labels and boring numbers.
-When it looks perfect, squint harder."
+        Mira: "Saboteurs love tidy labels and boring 
+        numbers. When it looks perfect, squint harder."
 
-She holds your stare a beat too long, then nods.
+        She holds your stare a beat too long, then nods.
 
-[You log: Mira Dross | Item: Engine Valves | Qty: 8 | Cost: 400]
+        You log: 
+        Name: Mira Dross | 
+        Item: Engine Valves | 
+        Qty: 8 | 
+        Cost: 400 |
 )";
 }
 
@@ -166,23 +185,29 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                                                                / \
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 01:14, The Skyrunner Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+         [January 17 – 01:14, The Skyrunner Arrives]
+        ──────────────────────────────────────────────
 
-Lyra Skyrunner drops a sealed pouch on your crate.
+        Lyra Skyrunner drops a sealed pouch on your 
+        crate.
 
-Lyra: "Encrypted mail. One bag. Sixty credits.
-Mostly route chatter. Mostly."
+        Lyra: "Encrypted mail. One bag. Sixty credits.
+        Mostly route chatter. Mostly."
 
-A faint harmonic hum rises, brushes your teeth, fades.
+        A faint harmonic hum rises, brushes your 
+        teeth, fades.
 
-Lyra: "They sing when a manifest lies.
-One of your nobles didn’t like his description line."
+        Lyra: "They sing when a manifest lies. One of 
+        your nobles didn’t like his description line."
 
-She taps your clipboard and walks off, feathers dripping.
+        She taps your clipboard and walks off, feathers dripping.
 
-[You log: Lyra Skyrunner | Item: Encrypted Mail Pouch | Qty: 1 | Cost: 60]
+        You log: 
+        Name: Lyra Skyrunner | 
+        Item: Encrypted Mail Pouch | 
+        Qty: 1 | 
+        Cost: 60 |
 )";
 }
 
@@ -203,22 +228,29 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                                                            /__\
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 01:26, The Mortician Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+         [January 17 – 01:26, The Mortician Arrives]
+        ──────────────────────────────────────────────
 
-A man in a rain-slick black coat sets down a small urn.
+        A man in a rain-slick black coat sets down a 
+        small urn.
 
-Mortician: "Gray & Sons. Ceremonial ash urn. One unit. Seventy-five."
+        Mortician: "Gray & Sons. Ceremonial ash urn. 
+        One unit. Seventy-five."
 
-The paperwork is flawless. Too flawless.
+        The paperwork is flawless. Too flawless.
 
-Mortician: "We do not mislabel, Captain.
-Others… project."
+        Mortician: "We do not mislabel, Captain.
+        Others… project."
 
-He inclines his head and leaves like a closing lid.
+        He inclines his head and leaves like a 
+        closing lid.
 
-[You log: Gray & Sons | Item: Ceremonial Ash Urn | Qty: 1 | Cost: 75]
+        You log: 
+        Name: Gray & Sons | 
+        Item: Ceremonial Ash Urn | 
+        Qty: 1 | 
+        Cost: 75 |
 )";
 }
 
@@ -239,24 +271,31 @@ ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
                                                         |__|   |__|
     )"
 R"(
-──────────────────────────────────────────────
- [January 17 – 01:39, The Alchemist Arrives]
-──────────────────────────────────────────────
+        ──────────────────────────────────────────────
+         [January 17 – 01:39, The Alchemist Arrives]
+        ──────────────────────────────────────────────
 
-Dr. Caldera arrives last, dry in a drowning night.
+        Dr. Caldera arrives last, dry in a drowning 
+        night.
 
-Two drums roll beside him:
-"CLEANING SOLVENT – INDUSTRIAL – NON-REACTIVE."
+        Two drums roll beside him:
+        "CLEANING SOLVENT – INDUSTRIAL – NON-REACTIVE."
 
-Dr. Caldera: "Two units. Six hundred. Very... efficient."
+        Dr. Caldera: "Two units. Six hundred. 
+        Very... efficient."
 
-No slosh. No scent. Too quiet.
+        No slosh. No scent. Too quiet.
 
-Dr. Caldera: "Some people undercharge for what’s real.
-Some call that misdeclared. I call it… leverage."
+        Dr. Caldera: "Some people undercharge for 
+        what’s real. Some call that misdeclared. 
+        I call it… leverage."
 
-The mail pouch at your hip spikes, then settles.
+        The mail pouch at your hip spikes, then settles.
 
-[You log: Dr. Caldera | Item: Cleaning Solvent | Qty: 2 | Cost: 600]
+        You log: 
+        Name: Dr. Caldera | 
+        Item: Cleaning Solvent | 
+        Qty: 2 | 
+        Cost: 600 |
 )";
 }
