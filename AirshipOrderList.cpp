@@ -88,6 +88,7 @@ bool AirshipOrderList::modifyDelivery(string szCust, string szItm, int iNewQty, 
 void AirshipOrderList::displayDeliveries() const
 {
     Delivery* current = pHead;
+    int iCount = 1;
 
     if(current == nullptr)
     {
@@ -95,13 +96,17 @@ void AirshipOrderList::displayDeliveries() const
         return;
     };
 
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "               ALL DELIVERIES\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n\n";
     while(current != nullptr)
     {
-        std::cout << "Name: " << current->szName << "\n";
-        std::cout << "Item: " << current->szItem << "\n";
-        std::cout << "Quantity: " << current->iQuantity << "\n";
-        std::cout << "Cost: " << current->dCost << "\n";
-
+        std::cout << szLineSpacing << "DELIVERY NUMBER: " << iCount << "\n";
+        std::cout << szLineSpacing << "Name: " << current->szName << "\n";
+        std::cout << szLineSpacing << "Item: " << current->szItem << "\n";
+        std::cout << szLineSpacing << "Quantity: " << current->iQuantity << "\n";
+        std::cout << szLineSpacing << "Cost: " << current->dCost << "\n\n";
+        iCount++;
         current = current->pNext;
     };
 };
@@ -120,10 +125,10 @@ void AirshipOrderList::displayDelivery(const Delivery* delivery)
     {
         if(current->szName == delivery->szName && current->szItem == delivery->szItem)
         {
-            std::cout << "Name: " << current->szName << "\n";
-            std::cout << "Item: " << current->szItem << "\n";
-            std::cout << "Quantity: " << current->iQuantity << "\n";
-            std::cout << "Cost: " << current->dCost << "\n";
+            std::cout << szLineSpacing << "Name: " << current->szName << "\n";
+            std::cout << szLineSpacing << "Item: " << current->szItem << "\n";
+            std::cout << szLineSpacing << "Quantity: " << current->iQuantity << "\n";
+            std::cout << szLineSpacing << "Cost: " << current->dCost << "\n";
             return;
         };
 

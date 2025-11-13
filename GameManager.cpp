@@ -45,6 +45,7 @@ void GameManager::runGuessingScene(const std::string& szScene)
                 break;
 
             case 3:
+                promptModifyDelivery();
                 break;
 
             case 4:
@@ -75,6 +76,7 @@ int GameManager::promptGuessingScene()
     std::cout << szLineSpacing << "──────────────────────────────────────────────\n\n";
     std::cout << szLineSpacing << "Enter Choice: ";
     std::cin >> iChoice;
+    std::cout << "\n";
 
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     return iChoice;
@@ -82,11 +84,28 @@ int GameManager::promptGuessingScene()
 
 void GameManager::promptNameAndItem()
 {
-    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
     std::cout << szLineSpacing << "Please Enter Delivery Name: ";
     std::getline(std::cin >> std::ws, m_szName);
     std::cout << szLineSpacing << "Please Enter Item Name: ";
     std::getline(std::cin >> std::ws, m_szItem);
+};
+
+void GameManager::promptQuantityAndCost()
+{
+    std::cout << szLineSpacing << "Please Enter New Quantity: ";
+    while (!(std::cin >> m_iQuantity) || m_iQuantity <= 0) {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << szLineSpacing << "Invalid number. Enter a positive integer: ";
+    }
+
+    std::cout << szLineSpacing << "Please Enter New Cost: ";
+    while (!(std::cin >> m_dCost) || m_dCost < 0.0) {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << szLineSpacing << "Invalid amount. Enter a valid cost: ";
+    }
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 };
 
 void GameManager::promptFindDelivery()
@@ -98,7 +117,31 @@ void GameManager::promptFindDelivery()
         std::cout << szLineSpacing << "Delivery Not Found\n";
         return;
     };
+
+    std::cout << "\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "               DELIVERY FOUND\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n\n";
     m_airshipOrderList.displayDelivery(delivery);
+    std::cout << "\n";
+};
+
+void GameManager::promptModifyDelivery()
+{
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n";
+    std::cout << szLineSpacing << "               MODIFY DELIVERY\n";
+    std::cout << szLineSpacing << "──────────────────────────────────────────────\n\n";
+
+    promptNameAndItem();
+    promptQuantityAndCost();
+
+    bool bIsModified = m_airshipOrderList.modifyDelivery(m_szName, m_szItem, m_iQuantity, m_dCost);
+    if(!bIsModified)
+    {
+        std::cout << szLineSpacing << "Failed To Modify Delivery\n";
+        return;
+    };
+    std::cout << szLineSpacing << "Delivery Successfully Modified\n\n";
 };
 
 void GameManager::promptRemoveDelivery()
@@ -111,10 +154,14 @@ void GameManager::promptRemoveDelivery()
         return;
     };
 
+    std::cout << "\n";
     m_airshipOrderList.displayDelivery(delivery);
+    std::cout << "\n";
+
     char cInput;
     std::cout << szLineSpacing << "Are You Sure This Is The Fraudulent Package? (y/n): ";
     std::cin >> cInput;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     if(cInput != 'y')
     {
         std::cout << szLineSpacing << "Aborting Package Removal\n";
@@ -124,7 +171,7 @@ void GameManager::promptRemoveDelivery()
     bool bIsRemoved = m_airshipOrderList.removeDelivery(m_szName, m_szItem);
     if(bIsRemoved)
     {
-        std::cout << szLineSpacing << "Package Successfully Removed\n";
+        std::cout << szLineSpacing << "Package Successfully Removed\n\n";
     }
     else
     {
@@ -155,6 +202,7 @@ void GameManager::promptCargoInput()
     std::cout << szLineSpacing << "Quantity (units): ";
     while (!(std::cin >> iQuantity) || iQuantity <= 0) {
         std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << szLineSpacing << "Invalid number. Enter a positive integer: ";
     }
 

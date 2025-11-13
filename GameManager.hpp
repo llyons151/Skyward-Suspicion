@@ -10,10 +10,13 @@ class GameManager{
         AirshipOrderList& m_airshipOrderList;
         std::string m_szName;
         std::string m_szItem;
+        int m_iQuantity;
+        double m_dCost;
 
     private:
         int promptGuessingScene();
         void promptNameAndItem();
+        void promptQuantityAndCost();
         void promptCargoInput();
         void promptFindDelivery();
         void promptModifyDelivery();
