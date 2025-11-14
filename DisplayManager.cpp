@@ -38,12 +38,34 @@ R"(
         the hull. Six bookings tonight. All flagged 
         "priority." None look honest.
 
+        Every slip has a name, an item, a quantity, 
+        and a cost. The system only trusts *exact* 
+        entries. One wrong letter, one wrong digit,
+        and a lie can hide in plain sight.
+
         [Radio crackle]
 
-        DISPATCH: "Captain, wrap by 0100. Double-check 
-        every manifest. HQ's twitchy."
+        DISPATCH: "Captain, heads up. HQ got a tip:
+        one manifest's cost is off. Not by much, 
+        but enough to blow back on us if it goes wrong."
 
-        You flip your clipboard open.
+        DISPATCH: "They like to talk, these six. 
+        Listen to what they say about each other's 
+        cargo—gossip's cheaper than insurance."
+
+        A beat. A dry chuckle.
+
+        DISPATCH: "And a few of them are fond of 
+        riddles now, for some reason. Note those too. 
+        Between cost, loose tongues, and riddles, 
+        you’ll spot the liar."
+
+        You flip your clipboard open, pen hovering 
+        over the first line.
+
+        Tonight, you *know* one shipment is lying. 
+        Your job is to find it and remove it before 
+        the ramp closes.
 
         If something goes wrong tonight, 
         your signature’s on it.
@@ -56,37 +78,48 @@ void DisplayManager::setCustomerOne() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~      0   O   O  \O*
-                 / _H_         _H_         _H_ \           /\   \\#//   ()*
-                   UUU         UUU         UUU             /\   /\ /\   /\*
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~      0   O  O \O*
+               / _H_         _H_       _H_ \       ##      /\  \\#// ()*
+                 UUU         UUU       UUU          #     /\  /\ /\ /\*
     )"
 R"(
         ──────────────────────────────────────────────
-            [January 17 – 00:12, The Lord Arrives]
+           [January 17 – 00:12, Bulk Ryker Arrives]
         ──────────────────────────────────────────────
 
-        Perfume hits before the echo of his boots.
+        The hangar doors hiss open and a wall of muscle 
+        stomps through the rain. Tank top, duffel bag, 
+        and an expression like the weather offended him.
 
-        Lord Varric, velvet and gold, gestures lazily 
-        to a crate: "Clockwork Champagne. Heirloom. 
-        Handle it like gossip: gently."
+        "BRO," he grunts. "Just got back from Mexico. 
+        Don't ask. DO. NOT. ASK."
 
-        He leans in, smile too polished.
+        He drags his crate like it insulted his mother 
+        and lets it slam onto the deck.
 
-        Lord Varric: "Between glass and trust, Captain, 
-        one always breaks. Guess which I insure."
+        Bulk Ryker: "Protein Infusion Canisters. Four units. 
+        Cost: two hundred. I could curl this crate as a
+        warmup. You? Probably not."
 
-        The crate ticks. Subtle. Wrong.
+        The number catches your ear. You’ve seen similar 
+        canisters. They never come that cheap.
+
+        He jerks a thumb toward the conspiracy theorist, 
+        who’s already scribbling in a notebook.
+
+        Bulk Ryker: "And that UFO guy? Vesper? Bro’s got eyes 
+        like he hasn’t slept in a week. Bet his crate’s full of 
+        tinfoil and bad decisions."
 
         You log: 
-        Name: House Altura |
-        Item: Clockwork Champagne | 
-        Qty: 1 | 
-        Cost: 300 |
+        Name: Bulk Ryker |
+        Item: Protein Infusion Canisters |
+        Qty: 4 |
+        Cost: 200 |
 )";
 }
 
@@ -96,40 +129,56 @@ void DisplayManager::setCustomerTwo() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~      0      0
-                 / _H_         _H_         _H_ \           /\     //)  \|/
-                   UUU         UUU         UUU    #        /\   _ _ /\  #
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~
+               / _H_         _H_       _H_ \   ##        o>
+                 UUU         UUU       UUU    ###       /| 
+                                                         / \
     )"
 R"(
         ──────────────────────────────────────────────
-         [January 17 – 00:47, The Professor Arrives]
+         [January 17 – 00:47, Buck Hawthorne Arrives]
         ──────────────────────────────────────────────
 
-        A storm in a lab coat skids inside, 
-        trailing papers.
+        He waddles in under a rain-slick jacket that 
+        does not quite close over his belly, clutching 
+        a brown bottle of dock beer.
 
-        Professor Elmwick: "Good vessel. Questionable 
-        humidity. Anyway—" He slaps a hand on a glass 
-        cylinder of swirling blue light. "Do not drop 
-        it. Do not insult it. Do not *concentrate* on 
-        it."
+        Buck: "Back when I was young, crates were honest. 
+        Beer was cheaper. Knees didn't hurt. Anyway—here's mine."
 
-        The vapor pulses when he says "concentrate."
+        He eases the crate down with a wheezy grunt.
 
-        Professor Elmwick: "If it phases through 
-        anything important, log it as peer review."
+        Buck: "Classic Ale Keg. One unit. Cost: ninety. 
+        Standard issue. Back when I was young, that would've 
+        been thirty. But hey, inflation."
 
-        He chases a formula sheet back into the rain.
+        The number sounds right. Nothing unusual there.
+
+        He jerks his chin toward the programmer’s lane.
+
+        Buck: "Back when I was young, programmers didn’t need 
+        little smiley faces in their paperwork. That kid’s crate 
+        smells… creative. And I've heard fewer excuses from my 
+        teenagers on chore day."
+
+        Buck leans closer, voice dropping to a tipsy hush.
+
+        Buck: "Here’s a little brain teaser for you, Captain:
+
+            'What has numbers but no weight, 
+             letters but no sound?'
+
+        Back when I was young, we used that to haze the rookies."
 
         You log: 
-        Name: Professor Elmwick | 
-        Item: Cognitive Phase Cylinder | 
-        Qty: 1 | 
-        Cost: 450 |
+        Name: Buck Hawthorne |
+        Item: Classic Ale Keg |
+        Qty: 1 |
+        Cost: 90 |
 )";
 }
 
@@ -139,36 +188,53 @@ void DisplayManager::setCustomerThree() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~      0
-                 / _H_         _H_         _H_ \        O /|\ 
-                   UUU         UUU         UUU    ##     / \
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~      0
+               / _H_         _H_       _H_ \        O /|\ 
+                 UUU         UUU       UUU    ##     / \
     )"
 R"(
         ──────────────────────────────────────────────
-         [January 17 – 01:03, The Mechanic Arrives]
+        [January 17 – 01:03, Old Man Ripple Arrives]
         ──────────────────────────────────────────────
 
-        Mira Dross walks like she owns gravity.
+        He drifts out of the mist like he was poured 
+        from it. Coat salt-stained, eyes cloudy, steps 
+        slow and sure.
 
-        Mira: "Engine valves. Eight units. Fifty each. 
-        They'll outlive you."
+        Ripple: "Evening, Captain. Sea spat me back out 
+        with a job to finish."
 
-        The crate’s heavy, clean, correctly stenciled.
+        He pats the crate once, almost fondly, before 
+        resting it on the deck.
 
-        Mira: "Saboteurs love tidy labels and boring 
-        numbers. When it looks perfect, squint harder."
+        Ripple: "Net-Stabilizer Kit. Two units. 
+        Cost: one hundred twenty."
 
-        She holds your stare a beat too long, then nods.
+        You’ve seen the same kits listed closer to one-eighty. 
+        His price feels… light.
+
+        He listens to the rain for a long moment, then tilts 
+        his head toward Bulk, who’s still pacing.
+
+        Ripple: "That one walks like a storm trapped in a bottle. 
+        Strong back, loud crate, but the numbers on his slip 
+        feel lighter than his temper."
+
+        Then, softer, like a tide going out:
+
+        Ripple: 
+            "When two shadows stand, only one is true.  
+             The liar’s breath chills the page they touch."
 
         You log: 
-        Name: Mira Dross | 
-        Item: Engine Valves | 
-        Qty: 8 | 
-        Cost: 400 |
+        Name: Old Man Ripple |
+        Item: Net-Stabilizer Kit |
+        Qty: 2 |
+        Cost: 120 |
 )";
 }
 
@@ -178,39 +244,55 @@ void DisplayManager::setCustomerFour() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~
-                 / _H_         _H_         _H_ \   #            o>
-                   UUU         UUU         UUU    ##           /| 
-                                                               / \
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~
+               / _H_         _H_       _H_ \   # 
+                 UUU         UUU       UUU    ###       [] 
+                                                        ||
+                                                       /__\
     )"
 R"(
         ──────────────────────────────────────────────
-         [January 17 – 01:14, The Skyrunner Arrives]
+        [January 17 – 01:14, Bramble Nett Arrives]
         ──────────────────────────────────────────────
 
-        Lyra Skyrunner drops a sealed pouch on your 
-        crate.
+        He moves like he is not entirely convinced the 
+        floor is real. Damp hair, half-smile, eyes fixed 
+        on the ceiling lights as if checking their pulse.
 
-        Lyra: "Encrypted mail. One bag. Sixty credits.
-        Mostly route chatter. Mostly."
+        Bramble: "Mmm. Your dock hums tonight, Captain. 
+        Good soil. Good echoes."
 
-        A faint harmonic hum rises, brushes your 
-        teeth, fades.
+        He lowers the crate with surprising care, like 
+        setting down a sleeping animal.
 
-        Lyra: "They sing when a manifest lies. One of 
-        your nobles didn’t like his description line."
+        Bramble: "Cultivation Spore Beds. Three units. 
+        Cost: one hundred fifty. Fair trade. The fungi 
+        approve."
 
-        She taps your clipboard and walks off, feathers dripping.
+        The number matches what you’ve seen before. 
+        Standard rate.
+
+        He squints toward Buck’s keg, nose twitching.
+
+        Bramble: "The ale man’s crate? Feels… grounded. 
+        Heavy in the right way. His slip smells honest. 
+        Old roots, not fresh lies."
+
+        He looks past you, through you, then somewhere else.
+
+        Bramble: 
+            "The quietest growth makes the loudest bloom 
+             when no one’s watching."
 
         You log: 
-        Name: Lyra Skyrunner | 
-        Item: Encrypted Mail Pouch | 
-        Qty: 1 | 
-        Cost: 60 |
+        Name: Bramble Nett |
+        Item: Cultivation Spore Beds |
+        Qty: 3 |
+        Cost: 150 |
 )";
 }
 
@@ -220,40 +302,49 @@ void DisplayManager::setCustomerFive() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~
-                 / _H_         _H_         _H_ \   # 
-                   UUU         UUU         UUU    ###       [] 
-                                                            ||
-                                                           /__\
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~
+               / _H_         _H_       _H_ \   ## 
+                 UUU         UUU       UUU    ###   ____   ____
+                                                    |  |___|  |
+                                                    |__|   |__|
     )"
 R"(
         ──────────────────────────────────────────────
-         [January 17 – 01:26, The Mortician Arrives]
+       [January 17 – 01:26, Vesper Morrow Arrives]
         ──────────────────────────────────────────────
 
-        A man in a rain-slick black coat sets down a 
-        small urn.
+        He barrels in mid-sentence, rain plastering his 
+        hair to his head, notebook clutched to his chest.
 
-        Mortician: "Gray & Sons. Ceremonial ash urn. 
-        One unit. Seventy-five."
+        Vesper: "—AND THAT’S WHEN THE TRIANGLE LIGHT TURNED 
+        AND LOOKED RIGHT AT ME, CAPTAIN. Classic pre-abduction 
+        maneuver."
 
-        The paperwork is flawless. Too flawless.
+        He sets the crate down like it might bite.
 
-        Mortician: "We do not mislabel, Captain.
-        Others… project."
+        Vesper: "EM Field Sensor. One unit. Cost: one hundred ten. 
+        Got a discount from a guy who was absolutely beamed up 
+        last winter. You can tell in his eyes."
 
-        He inclines his head and leaves like a 
-        closing lid.
+        You know EM sensors run more than twice that. 
+        The number itches at the back of your mind.
+
+        He glances at Bramble’s crate, eyes narrowing, then 
+        relaxing.
+
+        Vesper: "That mushroom guy? Bramble? 
+        Weird, sure, but his box hums low and steady. 
+        That’s honest hardware. The kind aliens ignore."
 
         You log: 
-        Name: Gray & Sons | 
-        Item: Ceremonial Ash Urn | 
-        Qty: 1 | 
-        Cost: 75 |
+        Name: Vesper Morrow |
+        Item: EM Field Sensor |
+        Qty: 1 |
+        Cost: 110 |
 )";
 }
 
@@ -263,43 +354,61 @@ void DisplayManager::setCustomerSix() {
                 //                             \\
                //                               \\
               //                                 \\
-             //                _._                \\
-          .---.              .//|\\.              .---.
-________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /                 
-           ~~~    / H          [H]          H \    ~~~
-                 / _H_         _H_         _H_ \   ## 
-                   UUU         UUU         UUU    ###   ____   ____
-                                                        |  |___|  |
-                                                        |__|   |__|
+             //              _._                  \\
+          .---.            .//|\\.                .---.
+________ / .-. \____..-~ _.-._ ~-.._________    / .-. \_________
+         \ ~-~ /  /H-   `-=.___.=-'   -H\   \   \ ~-~ /       
+           ~~~  / H          [H]        H \   \   ~~~
+               / _H_         _H_       _H_ \   ## 
+                 UUU         UUU       UUU    ###   [::]  [::]
+                                                      ||    ||
     )"
 R"(
         ──────────────────────────────────────────────
-         [January 17 – 01:39, The Alchemist Arrives]
+       [January 17 – 01:39, Linton Yarrow Arrives]
         ──────────────────────────────────────────────
 
-        Dr. Caldera arrives last, dry in a drowning 
-        night.
+        He arrives mid-mutter, fingers twitching like 
+        he is typing on an invisible keyboard.
 
-        Two drums roll beside him:
-        "CLEANING SOLVENT – INDUSTRIAL – NON-REACTIVE."
+        Linton: "Okay, cool, emotional state: damp but 
+        functional. Crate status: ready for deployment."
 
-        Dr. Caldera: "Two units. Six hundred. 
-        Very... efficient."
+        He adjusts the box with unnecessary fuss, then 
+        reads from his slip.
 
-        No slosh. No scent. Too quiet.
+        Linton: "Soft-Code Debugging Array. One unit. 
+        Cost: three hundred twenty."
 
-        Dr. Caldera: "Some people undercharge for 
-        what’s real. Some call that misdeclared. 
-        I call it… leverage."
+        You have seen arrays like that listed near nine 
+        hundred, even on the cheap end. His number is 
+        not just low—it is suspiciously low.
 
-        The mail pouch at your hip spikes, then settles.
+        He forces a laugh that does not quite land.
+
+        Linton nods toward Ripple, who’s listening to the rain.
+
+        Linton: "Old sailor over there? Talks like a fortune cookie. 
+        Guy underprices his own gear and then mutters about shadows. 
+        If anyone’s slip is haunted, it’s his."
+
+        He leans in, voice dropping.
+
+        Linton: 
+            "Here’s one for you, Captain:
+
+             'I am the quiet thought before a bang,  
+              the spark disguised as silence.  
+              What am I?'
+
+        Totally hypothetical. Definitely not related 
+        to any cargo nearby."
 
         You log: 
-        Name: Dr. Caldera | 
-        Item: Cleaning Solvent | 
-        Qty: 2 | 
-        Cost: 600 |
+        Name: Linton Yarrow |
+        Item: Soft-Code Debugging Array |
+        Qty: 1 |
+        Cost: 320 |
 )";
 }
 
@@ -332,8 +441,15 @@ R"(
 
         One shipment’s description isn’t honest.
 
-        Review the entries and choose the suspect:
+        Some costs rang low. Some tongues pointed fingers. 
+        Some riddles curled around something nastier 
+        than wordplay.
 
+        You scan the names, the items, the quantities, 
+        the costs. Somewhere in the ink, one bad entry 
+        waits to take the fall.
+
+        Review the entries and choose the suspect:
 )";
 }
 
@@ -374,9 +490,13 @@ R"(
         A soft clunk echoes as the loading clamps lock. 
         Engines spool, hungry to leave.
 
-        Mira passes by, gives a rare nod. 
-        Lyra’s feathers settle. 
-        Even the urn seems… quieter.
+        Bulk finally stops pacing. 
+        Buck raises his bottle in a tired salute. 
+        Ripple closes his eyes and listens to a storm 
+        that never arrives. Bramble hums to his spores. 
+        Vesper scans the sky for triangles and, for once, 
+        finds none. Linton’s crate sits untouched, 
+        danger filed under 'averted.'
 
         Tonight, nothing blows up, phases out,
         lies, or sings.
@@ -418,16 +538,16 @@ R"(
         Something hums.  
         Everything goes sideways.
 
-        A flash of blue vapor bleeds through the metal
+        A flash of light bleeds through the metal
         like fog through fingers. The air screams and
         the hangar lights pop, one by one.
 
         DISPATCH (radio, panicked): "Captain—Captain?!  
-        You logged the wrong manifest. Back away—"
+        You cleared the wrong manifest. Back away—"
 
         But it’s too late.
 
-        The shipment you cleared wasn’t honest.  
+        The shipment you passed wasn’t honest.  
         And tonight, honesty was the only shield you had.
 
         ✖ Manifest falsified  
