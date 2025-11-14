@@ -8,7 +8,7 @@ class GameManager{
         const char* szLineSpacing = "        ";
         std::string szCatalog;
         AirshipOrderList& m_airshipOrderList;
-        std::string m_fraudulentPackageName = "Grey";
+        std::string m_fraudulentPackageName = "Linton Yarrow";
         std::string m_szName;
         std::string m_szItem;
         int m_iQuantity;

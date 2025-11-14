@@ -248,41 +248,65 @@ void GameManager::setCatalog()
                        CREW STATEMENTS LOG
         ──────────────────────────────────────────────
 
-        [1] Lord Varric – House Altura
-            "Between glass and trust, Captain, one 
-            always breaks. Guess which I insure."
-            ▸ The crate ticks. Subtle. Wrong.
+        Keys for tonight:
+        1. Prices remember more than people do.
+        2. Gossip runs cheaper than cargo, but it
+           still points somewhere.
+        3. Riddles on a dock are rarely just poetry.
 
-        [2] Professor Elmwick
-            "Do not drop it. Do not insult it. Do 
-            not *concentrate* on it."
-            ▸ The vapor pulses when he says 
-            'concentrate.'
+        [1] Bulk Ryker
+            "Protein Infusion Canisters. Four units. Cost: two 
+            hundred." You’ve seen similar canisters and they 
+            never come that cheap.
+            ▸ Loud, confident, shrugs off the math: 
+              'Ask that programmer kid if you want numbers, 
+              bro. I only count reps.'
+            ▸ Points at Vesper as the weirdo with 'tinfoil 
+              and bad decisions.'
 
-        [3] Mira Dross
-            "Saboteurs love tidy labels and boring 
-            numbers. When it looks perfect, squint 
-            harder."
-            ▸ She watches your reaction—too long.
+        [2] Buck Hawthorne
+            "Classic Ale Keg. One unit. Cost: ninety." The number
+            sounds right. Nothing unusual there.
+            ▸ Grumbles about the old days, but his crate and 
+              cost are ordinary.
+            ▸ Chin toward the programmer’s lane: 'His crate is 
+              as suspicious as his resume.'
+            ▸ Riddle: 'What has numbers but no weight, letters 
+              but no sound?' A thing you can read and trust, or 
+              misread and regret.
 
-        [4] Lyra Skyrunner
-            "They sing when a manifest lies. One 
-            of your nobles didn’t like his 
-            description line."
-            ▸ A faint harmonic hum brushes your 
-              teeth, then fades.
+        [3] Old Man Ripple
+            "Net-Stabilizer Kit. Two units. Cost: one hundred 
+            twenty." You’ve seen the same kits listed closer to 
+            one-eighty. His price feels light.
+            ▸ Watches Bulk and says his numbers feel lighter 
+              than his temper.
+            ▸ Riddle: 'When two shadows stand, only one is true.  
+              The liar’s breath chills the page they touch.'
 
-        [5] The Mortician – Gray & Sons
-            "We do not mislabel, Captain. 
-             Others... project."
-            ▸ Paperwork flawless. Too flawless.
+        [4] Bramble Nett
+            "Cultivation Spore Beds. Three units. Cost: one 
+            hundred fifty." The number matches what you’ve seen 
+            before. Standard rate.
+            ▸ Says Buck’s crate feels grounded, his slip smells 
+              honest—old roots, not fresh lies.
 
-        [6] Dr. Caldera
-            "Some people undercharge for what’s 
-            real. Some call that misdeclared. 
-            I call it... leverage."
-            ▸ The drums are too quiet. 
-              No scent. No slosh.
+        [5] Vesper Morrow
+            "EM Field Sensor. One unit. Cost: one hundred ten." 
+            You know EM sensors run more than twice that; the 
+            number itches at the back of your mind.
+            ▸ Calls Bramble’s box honest hardware, the kind 
+              aliens ignore.
+
+        [6] Linton Yarrow
+            "Soft-Code Debugging Array. One unit. Cost: three 
+            hundred twenty." You’ve seen arrays like that listed 
+            near nine hundred, even on the cheap end his number 
+            is low.
+            ▸ Points at Ripple, the old sailor, as underpricing 
+              his own gear and muttering about shadows.
+            ▸ Riddle: 'A tool that finds mistakes cannot afford 
+              one of its own.' 
 )";
 };
 
