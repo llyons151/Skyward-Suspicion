@@ -248,65 +248,84 @@ void GameManager::setCatalog()
                        CREW STATEMENTS LOG
         ──────────────────────────────────────────────
 
-        Keys for tonight:
-        1. Prices remember more than people do.
-        2. Gossip runs cheaper than cargo, but it
-           still points somewhere.
-        3. Riddles on a dock are rarely just poetry.
 
         [1] Bulk Ryker
-            "Protein Infusion Canisters. Four units. Cost: two 
-            hundred." You’ve seen similar canisters and they 
-            never come that cheap.
-            ▸ Loud, confident, shrugs off the math: 
-              'Ask that programmer kid if you want numbers, 
-              bro. I only count reps.'
-            ▸ Points at Vesper as the weirdo with 'tinfoil 
-              and bad decisions.'
+            Price Note:
+              Protein Infusion Canisters priced at 200 — you’ve seen
+              similar canisters and they never come that cheap.
+
+            Accusation:
+              Points at Linton: “Bro jitters like he drank twelve
+              energy drinks… I wouldn’t trust him alone with my gym bag.”
+
+            Riddle:
+              "25 * 5 is 100"
+
 
         [2] Buck Hawthorne
-            "Classic Ale Keg. One unit. Cost: ninety." The number
-            sounds right. Nothing unusual there.
-            ▸ Grumbles about the old days, but his crate and 
-              cost are ordinary.
-            ▸ Chin toward the programmer’s lane: 'His crate is 
-              as suspicious as his resume.'
-            ▸ Riddle: 'What has numbers but no weight, letters 
-              but no sound?' A thing you can read and trust, or 
-              misread and regret.
+            Price Note:
+              Classic Ale Keg priced at 90 — number sounds right.
+
+            Accusation:
+              Comments on Vesper: smells like excuses, reminds him of
+              his disappointing son, but deep down solid.
+
+            Riddle:
+              “What has numbers but no weight,
+               letters but no sound?”
+
 
         [3] Old Man Ripple
-            "Net-Stabilizer Kit. Two units. Cost: one hundred 
-            twenty." You’ve seen the same kits listed closer to 
-            one-eighty. His price feels light.
-            ▸ Watches Bulk and says his numbers feel lighter 
-              than his temper.
-            ▸ Riddle: 'When two shadows stand, only one is true.  
-              The liar’s breath chills the page they touch.'
+            Price Note:
+              Net-Stabilizer Kit priced at 120 — you’ve seen them
+              closer to 180; his price feels light.
+
+            Accusation:
+              Says Bulk’s numbers feel lighter than his temper.
+
+            Riddle:
+              “When two shadows stand, only one is true.
+               The liar’s breath chills the page they touch.”
+
 
         [4] Bramble Nett
-            "Cultivation Spore Beds. Three units. Cost: one 
-            hundred fifty." The number matches what you’ve seen 
-            before. Standard rate.
-            ▸ Says Buck’s crate feels grounded, his slip smells 
-              honest—old roots, not fresh lies.
+            Price Note:
+              Cultivation Spore Beds priced at 150 — standard rate.
+
+            Accusation:
+              Says Buck’s crate smells honest; says Ripple is someone
+              he’d trust with a secret.
+
+            Riddle:
+              “The quietest growth makes the loudest bloom
+               when no one’s watching.”
+
 
         [5] Vesper Morrow
-            "EM Field Sensor. One unit. Cost: one hundred ten." 
-            You know EM sensors run more than twice that; the 
-            number itches at the back of your mind.
-            ▸ Calls Bramble’s box honest hardware, the kind 
-              aliens ignore.
+            Price Note:
+              EM Field Sensor priced at 110 — you know they run more
+              than twice that.
+
+            Accusation:
+              Says Buck acts harmless but is always listening, knows
+              more than he should.
+
+            Riddle:
+              (None)
+
 
         [6] Linton Yarrow
-            "Soft-Code Debugging Array. One unit. Cost: three 
-            hundred twenty." You’ve seen arrays like that listed 
-            near nine hundred, even on the cheap end his number 
-            is low.
-            ▸ Points at Ripple, the old sailor, as underpricing 
-              his own gear and muttering about shadows.
-            ▸ Riddle: 'A tool that finds mistakes cannot afford 
-              one of its own.' 
+            Price Note:
+              Soft-Code Debugging Array priced at 320 — you’ve seen
+              arrays like it listed near 900.
+
+            Accusation:
+              Says Bramble talks like a meditation app with a glitch,
+              suspects he’s hiding a subroutine.
+
+            Riddle:
+              “A tool that finds mistakes
+               cannot afford one of its own.”
 )";
 };
 

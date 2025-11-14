@@ -1,5 +1,4 @@
 #include "DisplayManager.hpp"
-#include <iostream>
 
 DisplayManager::DisplayManager() {
     setStartingScene();
@@ -42,14 +41,15 @@ R"(
 
         [Radio crackle]
 
-        DISPATCH: "Captain, heads up. HQ got a tip: one manifest's cost is off. Not by much, 
-        but enough to blow back on us if it goes wrong."
+        DISPATCH: "Captain, heads up. HQ got a tip: one shipment's manifest is fraudulent. 
+        Its price looks wrong on paper — not by much, but enough to put a target on our backs 
+        if we load it."
 
         DISPATCH: "They like to talk, these six. Listen to what they say about each other, 
         cargo gossip's cheaper than insurance."
 
         DISPATCH: "And a few of them are fond of riddles now, for some reason. Note those too. 
-        Between cost, loose tongues, and riddles, you’ll spot the liar."
+        Between price, loose tongues, and riddles, you’ll spot the liar."
 
         You flip your clipboard open, pen hovering over the first line.
 
@@ -69,10 +69,10 @@ void DisplayManager::setCustomerOne() {
              //                _._                \\
           .---.              .//|\\.              .---.
 ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
-         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /    
-           ~~~    / H          [H]          H \    ~~~      0
-                 / _H_         _H_         _H_ \           /\#
-                   UUU         UUU         UUU             /\
+         \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /             
+           ~~~    / H          [H]          H \    ~~~      0       ()
+                 / _H_         _H_         _H_ \           /\#     {[]}
+                   UUU         UUU         UUU             /\      //\\
 
     )"
 R"(
@@ -87,17 +87,20 @@ R"(
 
         He drags his crate like it insulted his mother and lets it slam onto the deck.
 
-        Bulk Ryker: "Protein Infusion Canisters. Four units. Cost: two hundred. I could curl this crate as a
-        warmup. You? Probably not."
+        Bulk Ryker: "Protein Infusion Canisters. Four units. Cost: two hundred. Best deal on the dock, bro. 
+        Nobody gets them cheaper than me."
 
-        The number catches your ear. You’ve seen similar canisters. They never come that cheap.
+        The number catches your ear. You’ve seen similar canisters. They never come that cheap by a long shot.
 
-        Bulk Ryker: "Ask that programmer kid if you want numbers, bro. I only count reps."
+        Bulk jerks his chin toward the programmer pacing near the back.
 
-        He jerks a thumb toward the conspiracy theorist, who’s already scribbling in a notebook.
+        Bulk Ryker: "But that programmer kid, Linton? Bro jitters like he drank twelve energy drinks 
+        and forgot to breathe. Always muttering, eyes all bugged out. I wouldn’t trust him alone 
+        with my gym bag, let alone a shipment."
 
-        Bulk Ryker: "And that UFO guy? Vesper? Bro’s got eyes like he hasn’t slept in a week. 
-        Bet his crate’s full of tinfoil and bad decisions."
+        He cracks his neck, smirks, then adds:
+
+        Bulk Ryker: "25 * 5 is 100"
 
         You log: 
         Name: Bulk Ryker |
@@ -117,9 +120,9 @@ void DisplayManager::setCustomerTwo() {
           .---.              .//|\\.              .---.
 ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
          \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /    
-           ~~~    / H          [H]          H \    ~~~      0
-                 / _H_         _H_         _H_ \           /\#
-                   UUU         UUU         UUU             /\
+           ~~~    / H          [H]          H \    ~~~      0     O
+                 / _H_         _H_         _H_ \           /\#  /(_)\
+                   UUU         UUU         UUU             /\    | | 
 
     )"
 R"(
@@ -130,7 +133,7 @@ R"(
         He waddles in under a rain-slick jacket that does not quite close over his belly, 
         clutching a brown bottle of dock beer.
 
-        Buck: "Back when I was young, crates were honest. Beer was cheaper. Knees didn't hurt. Anyway here's mine."
+        Buck: "Back when I was young, crates were honest. Beer was cheaper. Knees didn't hurt. Anyway, here's mine."
 
         He eases the crate down with a wheezy grunt.
 
@@ -139,10 +142,13 @@ R"(
 
         The number sounds right. Nothing unusual there.
 
-        He jerks his chin toward the programmer’s lane.
+        He nods toward the conspiracy theorist, still clutching his notebook like evidence.
 
-        Buck: "Back when I was young, programmers didn’t need little javascript frameworks and AI tools, 
-        they wrote everything in assembly. His crate is as suspicious as his resume. 
+        Buck: "That Vesper boy? Smells like excuses, same scent my disappointing son used to drag 
+        around after missing shift again. Hell, the kid even slouches the same. 
+        But underneath all that jitter and talk of lights and triangles, he's solid. 
+        If my ex-wife had given me custody, I reckon I'd've raised someone a lot like him
+        rough edges, weird stories, but a good heart shoved in there anyway."
 
         Buck leans closer, voice dropping to a tipsy hush.
 
@@ -172,8 +178,8 @@ void DisplayManager::setCustomerThree() {
 ________ / .-. \_________..-~ _.-._ ~-..________ / .-. \_________
          \ ~-~ /   /H-     `-=.___.=-'     -H\   \ ~-~ /    
            ~~~    / H          [H]          H \    ~~~      0
-                 / _H_         _H_         _H_ \           /\#
-                   UUU         UUU         UUU             /\
+                 / _H_         _H_         _H_ \           /\#   _O_
+                   UUU         UUU         UUU             /\     /\
 
     )"
 R"(
@@ -181,21 +187,26 @@ R"(
          [January 17 – 01:03, Old Man Ripple Arrives]
         ──────────────────────────────────────────────
 
-        He drifts out of the mist like he was poured from it. Coat salt-stained, eyes cloudy, steps slow and sure.
-        Ripple: "Evening, Captain. Sea spat me back out with a job to finish."
+        He drifts out of the mist like he was poured from it. Coat salt-stained, 
+        eyes cloudy, steps slow and sure.
 
-        He pats the crate once, almost fondly, before resting it on the deck.
+        Ripple: "Evening, Captain. Sea spat me back out with a job to finish. 
+        Funny thing ’bout tides—what leaves always comes back, unless it doesn’t. 
+        Circle of something… you know."
+
+        He pats the crate once, almost fondly, before resting it on the deck, 
+        clearly convinced he’s just shared ancient ocean wisdom instead of damp confusion.
 
         Ripple: "Net-Stabilizer Kit. Two units. Cost: one hundred twenty."
 
         You’ve seen the same kits listed closer to one-eighty. His price feels… light.
 
-        He listens to the rain for a long moment, then tilts his head toward Bulk, who’s still pacing.
+        Ripple watches the big man pace grooves into the hangar floor.
 
-        Ripple: "That one walks like a storm trapped in a bottle. Strong back, loud crate, but the numbers on 
-        his slip feel lighter than his temper."
+        Ripple: "Bulk walks like a bar fight looking for a table to break. Loud voice, louder footsteps, 
+        never still. That kind of energy capsizes calm crews. I’ve seen whole voyages sink on men like him."
 
-        Then, softer, like a tide going out:
+        He listens to the rain for a long moment, then adds, softer, like a tide going out:
 
         Ripple: 
             "When two shadows stand, only one is true.  
@@ -229,10 +240,12 @@ R"(
           [January 17 – 01:14, Bramble Nett Arrives]
         ──────────────────────────────────────────────
 
-        He moves like he is not entirely convinced the floor is real. Damp hair, half-smile, eyes fixed 
-        on the ceiling lights as if checking their pulse.
+        He moves like he is not entirely convinced the floor is real. Damp hair, half-smile, 
+        eyes fixed on the ceiling lights as if checking their pulse.
 
-        Bramble: "Mmm. Your dock hums tonight, Captain. Good soil. Good echoes."
+        Bramble: "Mmm. Your dock hums tonight, Captain. Good soil. Good echoes. 
+        And those lights? I won’t stop staring at ’em. Swear to god they’re breathing. 
+        In… out… in… out… like they know we’re here."
 
         He lowers the crate with surprising care, like setting down a sleeping animal.
 
@@ -240,14 +253,15 @@ R"(
 
         The number matches what you’ve seen before. Standard rate.
 
-        He squints toward Buck’s keg, nose twitching.
+        His gaze drifts toward the old sailor listening to the rain as if it’s speaking back.
 
-        Bramble: "The ale man’s crate? Feels… grounded. Heavy in the right way. His slip smells honest. 
-        Old roots, not fresh lies."
+        Bramble: "Ripple carries storms in his bones, but his eyes? Those are deep roots. 
+        He’s the sort who patches holes in other people’s ships without telling them. 
+        If there’s anyone here I’d plant a secret with, it’s him."
 
-        He looks past you, through you, then somewhere else.
+        Bramble’s smile tilts, distant.
 
-        Bramble: 
+        Bramble:
             "The quietest growth makes the loudest bloom 
              when no one’s watching."
 
@@ -279,10 +293,13 @@ R"(
           [January 17 – 01:26, Vesper Morrow Arrives]
         ──────────────────────────────────────────────
 
-        He barrels in mid-sentence, rain plastering his hair to his head, notebook clutched to his chest.
+        He barrels in mid-sentence, rain plastering his hair to his head, 
+        notebook clutched to his chest.
 
-        Vesper: "—AND THAT’S WHEN THE TRIANGLE LIGHT TURNED AND LOOKED RIGHT AT ME, CAPTAIN. 
-        Classic pre-abduction maneuver."
+        Vesper: "—AND THAT’S WHEN THE DOGMAN STEPPED OUT OF THE TREE LINE, CAPTAIN. 
+        Seven feet tall, glowing eyes, smelling like wet copper and bad omens. 
+        Locking eyes with him? Absolute sign of the apocalypse. 
+        Page forty-two of my notebook predicted this EXACT scenario."
 
         He sets the crate down like it might bite.
 
@@ -291,10 +308,15 @@ R"(
 
         You know EM sensors run more than twice that. The number itches at the back of your mind.
 
-        He glances at Bramble’s crate, eyes narrowing, then relaxing.
+        His gaze snags on Buck, who is taking a slow pull from his bottle.
 
-        Vesper: "That mushroom guy? Bramble? Weird, sure, but his box hums low and steady. 
-        That’s honest hardware. The kind aliens ignore."
+        Vesper: "That old-timer, Buck? Everyone acts like he’s harmless, but he’s always watching, 
+        always listening, like he’s writing a report no one asked for. Folks who play that harmless 
+        tend to know more than they should."
+
+        He taps his notebook once, eyes bright.
+
+        Vesper: "Patterns, Captain. The universe loves them. So do liars."
 
         You log: 
         Name: Vesper Morrow |
@@ -326,27 +348,30 @@ R"(
 
         He arrives mid-mutter, fingers twitching like he is typing on an invisible keyboard.
 
-        Linton: "Okay, cool, emotional state: damp but functional. Crate status: ready for deployment."
+        Linton: And for the record, Captain, I’ve decided encapsulation is overrated. 
+        Everyone keeps telling me to ‘hide my data’ and ‘respect boundaries.’ 
+        I say: make everything public. Let the world see the mess. 
+        At least then no one’s surprised when it breaks."
 
         He adjusts the box with unnecessary fuss, then reads from his slip.
 
         Linton: "Soft-Code Debugging Array. One unit. Cost: three hundred twenty."
 
-        You have seen arrays like that listed near nine hundred, even on the cheap end, his number low.
+        You have seen arrays like that listed near nine hundred; even on the cheap end, his number runs low.
 
         He forces a laugh that does not quite land.
 
-        Linton nods toward Ripple, who’s listening to the rain.
+        Linton’s eyes flick to Bramble, still studying the ceiling like it’s growing something.
 
-        Linton: "Old sailor over there? Talks like a fortune cookie. Guy underprices his own gear and 
-        then mutters about shadows. If anyone’s ship is haunted, it’s his."
+        Linton: "And that Bramble guy? Talks like a meditation app with a glitch. Nobody floats through life 
+        that calm without hiding a subroutine or two. If anyone here’s running something in the background, 
+        it’s him."
 
         He leans in, voice dropping.
 
         Linton: 
-            "Here’s one for you, Captain:
-
-            “A tool that finds mistakes cannot afford one of its own.”
+            "A tool that finds mistakes 
+             cannot afford one of its own."
 
         You log: 
         Name: Linton Yarrow |
@@ -389,7 +414,7 @@ R"(
         You scan the names, the items, the quantities, the costs. Somewhere in the ink, one bad entry 
         waits to take the fall.
 
-        Review the entries and choose the suspect:
+        Review the entries and delete the suspect's delivery:
 )";
 }
 
