@@ -1,6 +1,8 @@
 # Skyward Suspicion
 A narrative mystery game where you play as an airship cargo captain who must identify and remove a fraudulent package before departure.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2df6a39f-192d-4349-9475-10ecb78fa605" />
+
 ## Overview
 Welcome aboard, Captain.
 
